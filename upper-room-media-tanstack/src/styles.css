@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 220 35% 8%;
+  --foreground: 210 20% 95%;
+  --card: 220 32% 10%;
+  --card-foreground: 210 20% 95%;
+  --primary: 220 45% 14%;
+  --primary-foreground: 210 20% 98%;
+  --secondary: 220 30% 14%;
+  --muted: 220 28% 14%;
+  --muted-foreground: 215 18% 62%;
+  --accent: 43 80% 58%;
+  --gold: 43 80% 58%;
+  --gold-soft: 43 72% 68%;
+  --royal-deep: 222 50% 12%;
+  --border: 220 30% 18%;
+}
+
+body {
+  font-family: var(--font-sans, system-ui, sans-serif);
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.font-display {
+  font-family: Georgia, serif;
+}
+
+.glow-gold {
+  box-shadow: 0 0 24px -4px hsl(var(--gold) / 0.5);
+}
+
+@keyframes pulse-gold {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+.animate-pulse-gold {
+  animation: pulse-gold 2s ease-in-out infinite;
+}

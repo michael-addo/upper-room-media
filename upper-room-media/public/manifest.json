@@ -1,0 +1,10 @@
+{
+  "name": "Upper Room Media",
+  "short_name": "UR Media",
+  "description": "AI-Powered Church Presentation System",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#16202e",
+  "theme_color": "#16202e",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
